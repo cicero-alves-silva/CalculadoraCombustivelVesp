@@ -11,8 +11,9 @@ public class CalculadoraApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(CalculadoraApplication.class.getResource("tela-calculo.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Calculadora de Preço do Combustível");
+        stage.setMaximized(true);
         stage.setScene(scene);
         stage.show();
     }
